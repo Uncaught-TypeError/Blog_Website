@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.firstheader{
+    position: relative;
+}
+.navbar1{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 6%;
+    align-items: center;
+    background: rgb(0, 0, 0);
+}
+
+.navbar1 .col-2 .fa-brands{
+    padding: 0 20px;
+}
+
+.navbar1 .col-1 .fa-solid{
+    padding: 0 10px;
+}
+
+input[type="search"]{
+    background: transparent;
+    border: none;
+    color: rgb(212, 212, 212);
+    outline: none;
+}
+input::placeholder{
+    font-weight: bold;
+    color: white;
+}
+input[type="search"]:focus   
+{
+    background: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.secondheader{
+    position: relative;
+}
+.navbar2{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 6%;
+    align-items: center;
+}
+
+.navbar2 .col-3 span{
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Forum', cursive;
+    cursor: pointer;
+}
+
+.navbar2 .col-4{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar2 .col-4 ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar2 .col-4 ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Forum', cursive;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar2 .col-4 ul li a:hover{
+    color:rgb(175, 117, 69);
+    cursor: pointer;
+}
+
+.imagebox{
+    position:relative;
+    width: 100%;
+}
+    
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.grid-item{
+    height: 800px;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+}
+.item1{
+    grid-row: 1/1;
+}
+
+.item-2{
+    grid-row: 1/1;
+}
+.item-3{
+    grid-row: 1/1;
+}
+
+.c1{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-container{
+    background: white;
+    position: absolute;
+    top: -50px;
+    text-align: center;
+    display: flex;
+    width: 400px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-container span{
+    font-size: 45px;
+    color: black;
+    font-family: 'Forum', cursive;
+}
+
+
+.twocol{
+    display: flex;
+    position: relative;
+}
+
+.columns{
+    flex: 50%;
+    padding: 10px;
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+/* .blogbox{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 500px;
+    height: 500px;
+    
+} */
+
+.item1{
+    width: 800px;
+    height: 500px;
+    display: grid;
+    grid-auto-flow: column;
+    position: relative;
+    box-shadow: 3px 4px 8px 2px rgba(0,0,0,0.14);
+    margin: 10px;
+}
+
+.sub-item1{
+    width: 400px;
+    height: 500px;
+}
+.sub-item2{
+    width: 400px;
+    height: 500px;
+    display: flex;
+}
+
+.spanbox1{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    display: flex; 
+    margin-left: 30px;
+}
+
+.spanbox2{
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 30px;
+}
+
+.spanbox3{
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 30px; width: 300px;
+}
+
+.spanboxtext1{
+    font-size: 1rem;
+    font-weight: 400; 
+    color: black;
+    font-family: 'Forum', cursive;
+}
+
+.spanboxtext2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: black;
+    font-family: 'Forum', cursive; 
+    text-align: left;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.spanboxtext2:hover{
+    color: rgb(177, 135, 97);
+}
+
+.spanboxtext3{
+    font-size: 1.3rem;font-weight: 400;
+    color: black;
+    font-family: 'Forum', cursive; text-align: left;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.spanboxtext3:hover{
+    color: rgb(177, 135, 97);
+}
+
+.formbox1{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    box-shadow: 3px 4px 8px 2px rgba(0,0,0,0.14);
+    margin: 10px;
+    top: -80px;
+    background: rgb(165, 68, 85);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.formbox2{
+    width: 500px;
+    height: 700px;
+    position: relative;
+    margin: 10px;
+    background: transparent;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+.formbox1 .formspan{
+    margin-top: -5%;
+}
+
+.formspan span{
+    color: white;
+    font-family: 'Forum', cursive;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.formlabel{
+    width: 220px;
+    margin-top: 10%;
+}
+.formlabel2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formlabel2 span{
+    color: black;
+    font-family: 'Forum', cursive;
+    font-size: 1.6rem;
+}
+
+.formimgbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 250px;
+    height: 200px;
+}
+
+.box img{
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgb(255, 238, 238);
+}
+
+.box:hover{
+    filter: blur(0px);
+    transition: 0.4s ease-in-out;
+    background: rgb(255, 236, 236);
+}
+
+.iconbox{
+    display: flex;
+}
+
+.iconbox .fa-brands{
+    padding: 0 15px;
+    color: black;
+    font-size: 18px;
+}
+
+.formlabel label{
+    color: white;
+    font-family: 'Forum', cursive;
+    font-size: 1rem;
+    float: left;
+}
+
+.forminput{
+    margin-top: 3%;
+    width: 200px;
+    height: 25px;
+}
+
+.forminput input{
+    width: 200px;
+    height: 25px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid white;
+}
+input[type="email"][class="emailinput"]{
+    background: transparent;
+    color: rgb(212, 212, 212);
+    outline: none;
+}
+input[type="email"][class="emailinput"]:focus   
+{
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+input[type="email"][class="emailinput"]:hover{
+    border-bottom: 3px solid black;
+}   
+.formbutton{
+    margin-top: 10%;
+}
+
+.btn1{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background: white;
+    color: rgb(165, 68, 85);
+    font-family: 'Forum', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn1:hover{
+    background: black;
+    color: white;
+    font-family: 'Forum', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact-container{
+    width: 100%;
+    margin-top: 50px;
+    background: rgb(255, 240, 243);
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-title-box{
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-title{
+    color: black;
+    font-family: 'Forum', cursive;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.input-box{
+    display: grid;
+    grid-template-areas:
+    "box1 box2"
+    "box3 box4";
+}
+
+.fname-box{
+    grid-area: box1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.lname-box{
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.email-box{
+    grid-area: box3;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.mesg-box{
+    grid-area: box4;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.padbox{
+    padding-bottom: 20px;
+    font-family: 'Forum', cursive;
+    font-size: 1rem;
+    color: black;
+}
+
+.typebox{
+    width: 200px;
+    height: 25px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgba(146, 146, 146, 0.6);
+}
+
+input[type="email"][class="typebox"],
+input[type="text"][class="typebox"]{
+    background: transparent;
+    color: rgb(212, 212, 212);
+    outline: none;
+}
+input[type="email"][class="typebox"]:focus,input[type="text"][class="typebox"]:focus    
+{
+    font-size: 1rem;
+    font-family: 'Forum', cursive;
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+input[type="email"][class="typebox"]:hover,
+input[type="text"][class="typebox"]:hover{
+    border-bottom: 2px solid rgba(231, 95, 120, 0.8);
+}  
+
+.btn2{
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background: white;
+    background: rgb(165, 68, 85);
+    font-family: 'Forum', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn2:hover{
+    background: black;
+    color: white;
+    font-family: 'Forum', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer{
+    width: 100%;
+    height: 40px;
+    background: rgb(156, 64, 81);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer span{
+    font-family: 'Forum', cursive;
+}
+@media only screen and (max-width: 600px){
+    .imagebox{
+        height: 100vh;
+    }
+    .grid-item{
+        background-color: rgb(78, 78, 78);
+        border: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .grid-container{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+    }
+    .item-1{
+        grid-row: 1/1;
+    }
+    .item-2{
+        grid-row: 2/2;
+    }
+    .item-3{
+        grid-row: 3/3;
+    }
+    
+}
+@media only screen and (max-width: 900px){
+    .imagebox{
+        height: 100vh;
+    }
+    .grid-item{
+        background-color: rgb(78, 78, 78);
+        border: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .grid-container{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+    }
+    .item-1{
+        grid-row: 1/1;
+    }
+    .item-2{
+        grid-row: 2/2;
+    }
+    .item-3{
+        grid-row: 3/3;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px){
+    
+    .grid-item{
+        background-color: rgb(78, 78, 78);
+        border: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .grid-container{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+    }
+    .item-1{
+        grid-row: 1/1;
+    }
+    .item-2{
+        grid-row: 2/2;
+    }
+    .item-3{
+        grid-row: 3/3;
+    }
+    
+}
